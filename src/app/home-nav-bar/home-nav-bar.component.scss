@@ -1,0 +1,42 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.center {
+  text-align: center;
+}
+
+.spacer {
+	flex: 1 1 auto;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  background: #F5F5F5;
+  width: 12rem;
+  box-shadow: 0.2rem 0 0.3rem #888888;
+}
+
+.sidenav .mat-toolbar {
+  background: black;
+  color: #F5F5F5;
+}
+
+.mat-toolbar.mat-primary {
+  background: #0066CC;
+  color: #F5F5F5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-nav-list .mat-list-item:hover{
+  color: #F5F5F5;
+  background-color: #0066CC;
+}
+
+.is-active {
+  color: #F5F5F5 !important;
+  background-color: black !important;
+}

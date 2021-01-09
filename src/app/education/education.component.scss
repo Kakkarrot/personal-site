@@ -1,0 +1,24 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.leftside, .rightside {
+	background-color: #F5F5F5;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+}
+
+li {
+	max-width: 30rem; 
+	text-indent: -1.35rem;
+}
+
+/*
+@media screen and (min-width: 1000px) {
+	.leftside, .rightside {
+		height: 100vh !important;
+	}
+}
+*/
+

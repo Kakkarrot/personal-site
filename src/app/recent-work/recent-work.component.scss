@@ -1,0 +1,26 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.leftside {
+	background-color: #F5F5F5;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  	box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	padding-left: 2rem;
+	padding-right: 2rem;
+	max-width: 40rem;
+}
+
+.container {
+  padding: 1rem 2rem;
+}
+
+.center {
+	text-align: center;
+}
