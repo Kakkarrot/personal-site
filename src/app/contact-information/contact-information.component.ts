@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { HomeNavBarComponent } from '../home-nav-bar/home-nav-bar.component';
+import {Component, OnInit} from '@angular/core';
+import {HomeNavBarComponent} from '../home-nav-bar/home-nav-bar.component';
 
 @Component({
   selector: 'app-contact-information',
@@ -8,10 +8,11 @@ import { HomeNavBarComponent } from '../home-nav-bar/home-nav-bar.component';
 })
 export class ContactInformationComponent implements OnInit {
 
-  constructor(private bar: HomeNavBarComponent) { }
+  constructor(private bar: HomeNavBarComponent) {
+  }
 
   ngOnInit() {
-  	this.bar.displaySection = "Contact Information";
+    this.bar.displaySection = 'Contact Information';
   }
 
 }
