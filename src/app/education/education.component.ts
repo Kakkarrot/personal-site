@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { HomeNavBarComponent } from '../home-nav-bar/home-nav-bar.component';
+import {Component, OnInit} from '@angular/core';
+import {HomeNavBarComponent} from '../home-nav-bar/home-nav-bar.component';
 
 @Component({
   selector: 'app-education',
@@ -8,11 +8,11 @@ import { HomeNavBarComponent } from '../home-nav-bar/home-nav-bar.component';
 })
 export class EducationComponent implements OnInit {
 
-  constructor(private bar: HomeNavBarComponent) { }
+  constructor(private bar: HomeNavBarComponent) {
+  }
 
   ngOnInit() {
-    // tslint:disable-next-line:indent
-  	this.bar.displaySection = 'Education';
+    this.bar.displaySection = 'Education';
   }
 
 }
