@@ -1,8 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ViewChild } from '@angular/core';
 import {Injectable} from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { Router, NavigationEnd } from '@angular/router';
+import {map, filter, withLatestFrom } from 'rxjs/operators';
+import { MatSidenav } from '@angular/material';
+
 
 @Component({
   selector: 'app-home-nav-bar',
@@ -12,8 +15,14 @@ import {map} from 'rxjs/operators';
 
 @Injectable()
 export class HomeNavBarComponent {
+  @ViewChild ('drawer', {static: false}) drawer: MatSidenav;
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver,
+              router: Router) {
+    router.events.pipe(
+      withLatestFrom(this.isHandset$),
+      filter(([a, b]) => b && a instanceof NavigationEnd)
+    ).subscribe(_ => this.drawer.close());
   }
   name = 'WILLIE LI';
   displaySection = '';
