@@ -8,8 +8,20 @@ body {
   padding-right: 2rem;
 }
 
+.align-items-center {
+  text-align: center;
+  align-content: center;
+}
+
+hr {
+  display: block;
+  border: 0.175rem solid #0066CC;
+  background: #0066CC;
+}
+
 li {
   max-width: 30rem;
   text-indent: -1.35rem;
   padding-left: 1.35rem;
+  //align-content: start;
 }
