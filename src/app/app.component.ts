@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { Inject } from '@angular/core';  
+import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
 
 
 @Component({
@@ -11,14 +8,12 @@ import { Inject } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit{
-  name = "Willie Li";
+export class AppComponent implements OnInit {
   title = 'Personal Site';
-  description = "";
-
   window: Element;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
