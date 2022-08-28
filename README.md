@@ -1,6 +1,7 @@
-# PersonalSite
+# Personal Site
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+This is the repository for my personal website. 
+The site is deployed live at https://kakkarrot.vercel.app/about. 
 
 ## Development server
 
